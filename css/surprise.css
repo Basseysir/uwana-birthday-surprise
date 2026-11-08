@@ -1,0 +1,194 @@
+#confetti {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.surprise-container {
+    width: 90%;
+    max-width: 850px;
+    margin: auto;
+    padding: 65px 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 1.5s ease;
+}
+
+.final-label {
+    color: #d6b978;
+    font-size: 11px;
+    letter-spacing: 5px;
+}
+
+.star {
+    color: #e3c98c;
+    font-size: 45px;
+    margin: 25px 0;
+    animation: rotateStar 8s linear infinite;
+}
+
+.surprise-container h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(45px, 9vw, 85px);
+    font-weight: 400;
+}
+
+.surprise-container h1 span {
+    display: block;
+    color: #e3c98c;
+    font-size: clamp(75px, 14vw, 125px);
+    font-weight: 700;
+}
+
+.surprise-container > h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.final-nickname {
+    color: #d6b978;
+    font-style: italic;
+    letter-spacing: 3px;
+    margin-top: 15px;
+}
+
+.final-divider {
+    width: 75px;
+    height: 1px;
+    background: #d6b978;
+    margin: 35px auto;
+}
+
+.final-message {
+    max-width: 550px;
+    margin: auto;
+    color: #c4ccda;
+    font-size: 14px;
+    line-height: 2.2;
+}
+
+.final-button-container {
+    margin: 40px 0;
+}
+
+#revealSurprise {
+    padding: 17px 35px;
+    border: none;
+    background: linear-gradient(135deg, #f0dba5, #c4a45f);
+    color: #10182a;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#revealSurprise:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 35px rgba(214, 185, 120, 0.3);
+}
+
+.hidden-message {
+    display: none;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(214, 185, 120, 0.4);
+    border-radius: 8px;
+    animation: fadeIn 1.5s ease;
+}
+
+.message-picture {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 25px;
+    padding: 5px;
+    border: 2px solid #d6b978;
+    border-radius: 50%;
+}
+
+.message-picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hidden-message h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #e3c98c;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.hidden-message p {
+    color: #c4ccda;
+    font-size: 13px;
+    line-height: 2.2;
+    margin-bottom: 20px;
+}
+
+.hidden-message h3 {
+    color: #e3c98c;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+.hidden-message .closing-text {
+    font-style: italic;
+}
+
+.signature {
+    color: #d6b978 !important;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px !important;
+}
+
+.final-footer {
+    margin-top: 65px;
+    color: #8993a8;
+    font-size: 9px;
+    letter-spacing: 4px;
+}
+
+@keyframes rotateStar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media(max-width: 600px) {
+
+    .surprise-container {
+        padding: 45px 0;
+    }
+
+    .surprise-container > h2 {
+        font-size: 23px;
+    }
+
+    .hidden-message {
+        padding: 30px 20px;
+    }
+
+    .hidden-message h2 {
+        font-size: 29px;
+    }
+
+    .hidden-message h3 {
+        font-size: 25px;
+    }
+
+}
